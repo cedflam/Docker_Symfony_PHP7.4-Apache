@@ -1,6 +1,6 @@
 FROM php:7.4-apache
 
-RUN echo "ServerName intranet_colbert" >> /etc/apache2/apache2.conf
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends
