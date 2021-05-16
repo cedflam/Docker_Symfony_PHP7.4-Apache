@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+
+  www:
+    build: php
+    container_name: php_intranet_docker
+    ports:
+      - "8001:80"
+    volumes:
+      - ./php/vhosts:/etc/apache2/sites-enabled
+      - ./:/var/www
+    restart: always
+    networks:
+      - apache-php74-postgres-node
+
+  nodejs:
+    image: node:lts-alpine
+    container_name: nodejs_intranet_docker
+    volumes:
+      - ./:/var/www
+    networks:
+      - apache-php74-postgres-node
+
+networks:
+  apache-php74-postgres-node:
+
+
