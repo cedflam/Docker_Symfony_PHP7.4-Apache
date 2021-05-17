@@ -7,7 +7,7 @@
 ####Attention ! Effectuer les paramétrages nécessaires des fichiers :
 * docker-compose.yml
 * Dockerfile
-* vhosts.conf
+* vhosts.conf (modifier le chemin vers l'application)
 
 ### Installation de Docker :
 * Installer docker 
