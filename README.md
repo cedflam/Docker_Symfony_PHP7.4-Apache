@@ -18,4 +18,8 @@
 * cmd -> composer install (installe les dépendances Symfony) 
 * cmd -> npm install (Installe les dépendances NodeJs)
 * cmd -> npm run build (Construit les fichiers de prod Node React)
+
+### Exemple de .env fichiers avec bdd multiple
+DATABASE_URL="postgresql://postgres:root@192.168.1.47:5432/postgres?serverVersion=13&charset=utf8"
+DATABASE_INTRANET_URL="postgresql://postgres:root@192.168.1.47:5432/intranet?serverVersion=13&charset=utf8"
  
