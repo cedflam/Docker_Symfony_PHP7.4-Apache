@@ -4,7 +4,7 @@
 * Modifier postgresql.conf -> 'listen_addresses' = '*'
 * Modifier pg_hba.conf -> 'host all all 192.168.1.0/24 trust'
 
-####Attention ! Effectuer les paramétrages nécessaires des fichiers :
+### Attention ! Effectuer les paramétrages nécessaires des fichiers :
 * docker-compose.yml
 * Dockerfile
 * vhosts.conf (modifier le chemin vers l'application)
