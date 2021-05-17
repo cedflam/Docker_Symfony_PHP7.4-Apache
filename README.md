@@ -1,6 +1,6 @@
 # Docker Template
 
-### Configuration Postgres :
+### Configuration Postgres (Bdd sur machine locale):
 * Modifier postgresql.conf -> 'listen_addresses' = '*'
 * Modifier pg_hba.conf -> 'host all all 192.168.1.0/24 trust'
 
